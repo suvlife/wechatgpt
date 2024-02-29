@@ -44,7 +44,7 @@ export class ChatGPTBot {
     model: "gpt-3.5-turbo-0125",
     // add your ChatGPT model parameters below
     temperature: 0.8,
-    max_tokens: 16380,
+    // max_tokens: 16380,
   };
 
   // ChatGPT system content configuration (guided by OpenAI official document)
