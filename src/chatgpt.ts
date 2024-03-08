@@ -43,7 +43,7 @@ export class ChatGPTBot {
     // this model field is required
     model: "gpt-4-0125-preview",
     // add your ChatGPT model parameters below
-    temperature: 0.8,
+    temperature: 0.9,
     // max_tokens: 128000,
   };
 
@@ -52,7 +52,7 @@ export class ChatGPTBot {
   chatgptSystemContent: string = `You are ChatGPT, a large language model trained by OpenAI. Answer as concisely as possible.\nKnowledge cutoff: 2021-09-01\nCurrent date: ${this.currentDate}`;
 
   // message size for a single reply by the bot
-  SINGLE_MESSAGE_MAX_SIZE: number = 5000;
+  SINGLE_MESSAGE_MAX_SIZE: number = 9000;
 
   // OpenAI API
   private openaiAccountConfig: any; // OpenAI API key (required) and organization key (optional)
