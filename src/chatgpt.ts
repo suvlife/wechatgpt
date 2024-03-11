@@ -35,7 +35,7 @@ export class ChatGPTBot {
   chatgptTriggerKeyword: string = Config.chatgptTriggerKeyword;
 
   // ChatGPT error response
-  chatgptErrorMessage: string = "🤖️：ChatGPT摆烂了，请稍后再试～";
+  chatgptErrorMessage: string = "🤖️：贾维斯javis摆烂了，请稍后再试～";
 
   // ChatGPT model configuration
   // please refer to the OpenAI API doc: https://beta.openai.com/docs/api-reference/introduction
@@ -43,13 +43,13 @@ export class ChatGPTBot {
     // this model field is required
     model: "gpt-4-0125-preview",
     // add your ChatGPT model parameters below
-    temperature: 0.9,
+    temperature: 1.2,
     // max_tokens: 128000,
   };
 
   // ChatGPT system content configuration (guided by OpenAI official document)
   currentDate: string = new Date().toISOString().split("T")[0];
-  chatgptSystemContent: string = `You are ChatGPT, a large language model trained by OpenAI. Answer as concisely as possible.\nKnowledge cutoff: 2021-09-01\nCurrent date: ${this.currentDate}`;
+  chatgptSystemContent: string = `You are Javis, a large language model trained by OpenAI. Answer as concisely as possible.\nKnowledge cutoff: 2024-03-09\nCurrent date: ${this.currentDate}`;
 
   // message size for a single reply by the bot
   SINGLE_MESSAGE_MAX_SIZE: number = 9000;
